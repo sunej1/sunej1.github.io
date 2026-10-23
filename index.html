@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Edward Sun — student, researcher, and software developer.">
+  <title>Edward Sun | Personal Website</title>
+  <style>
+    :root {
+      --bg: #f8f8f6;
+      --text: #202528;
+      --muted: #667078;
+      --accent: #255a77;
+      --line: #e0e3e3;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 840px;
+      padding: 0 28px;
+      margin: auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding: 22px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .hero { padding: 90px 0 68px; }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(46px, 8vw, 76px);
+      line-height: 1.08;
+      letter-spacing: -3px;
+      margin: 18px 0;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: var(--muted);
+      max-width: 590px;
+    }
+
+    section {
+      padding: 40px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      font-size: 25px;
+      letter-spacing: -0.7px;
+      margin: 0 0 22px;
+    }
+
+    p { margin: 0 0 18px; }
+
+    .entry { margin-bottom: 32px; }
+
+    .entry h3 {
+      font-size: 18px;
+      margin: 0 0 5px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      padding: 32px 0 50px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .hero { padding: 65px 0 50px; }
+      .nav-links { gap: 10px; font-size: 13px; }
+      h1 { letter-spacing: -2px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <span class="brand">Edward Sun</span>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <div class="eyebrow">Student · Researcher · Developer</div>
+      <h1>Edward Sun.</h1>
+      <p class="subtitle">
+        Mathematics and Economics student at Vanderbilt
+        University, with a minor in Computer Science.
+        Interested in software engineering, artificial
+        intelligence, and building technology that solves
+        real-world problems.
+      </p>
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm an undergraduate student at Vanderbilt University,
+        studying Mathematics and Economics with a minor in
+        Computer Science. My interests lie at the intersection
+        of technology, business, and quantitative analysis.
+      </p>
+      <p>
+        I enjoy developing software, researching emerging
+        technologies, and finding opportunities to automate
+        inefficient processes. My long-term goal is to build
+        technology products that address practical problems.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <h3>Stanford Deliberative Democracy Lab</h3>
+        <div class="meta">Research Assistant · 2025–Present</div>
+        <p>
+          Conduct research involving public attitudes toward
+          artificial intelligence, survey data analysis,
+          and deliberative democracy.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Real Estate Automation Venture</h3>
+        <div class="meta">Co-Founder &amp; Software Developer · 2026–Present</div>
+        <p>
+          Developing a document automation platform for
+          real estate professionals, integrating document
+          processing, OCR, and electronic signature workflows.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>River Tuolumne Capital</h3>
+        <div class="meta">Investment Intern · 2024</div>
+        <p>
+          Conducted investment research, financial analysis,
+          and due diligence on emerging technology businesses.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="entry">
+        <h3>Real Estate Document Automation</h3>
+        <p>
+          A web application that processes real estate
+          documents, identifies required signature fields,
+          and prepares documents for electronic signing
+          through DocuSign.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>AI-Based Financial News Analysis</h3>
+        <p>
+          An experimental research pipeline using local
+          language models to classify financial news
+          and investigate market reactions.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Interested in connecting about software engineering,
+        research, or technology projects.
+      </p>
+      <p>
+        Contact information will be added after setting
+        up my custom domain email address.
+      </p>
+    </section>
+  </main>
+
+  <footer class="container">
+    © 2026 Edward Sun
+  </footer>
+</body>
+</html>
